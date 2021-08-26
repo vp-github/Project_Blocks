@@ -23,7 +23,7 @@ Blockly.JavaScript["statement_input"] = function (block) {
 };
 
 
-Blockly.Blocks['new_block'] = {
+Blockly.Blocks['dropdown_block'] = {
   init: function() {
     this.appendDummyInput()
     .appendField("Ask me a question")  
@@ -35,7 +35,7 @@ Blockly.Blocks['new_block'] = {
  this.setHelpUrl("");
   }
 };
-Blockly.JavaScript["new_block"] = function (block) {
+Blockly.JavaScript["dropdown_block"] = function (block) {
   var dropdown_bot = block.getFieldValue ('dropdown');
   var code = `var dropdown_val = "${dropdown_bot}"`;
   return code;
