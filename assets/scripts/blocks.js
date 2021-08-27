@@ -64,5 +64,6 @@ function runcode() {
 
 function reset() {
   delete dropdown_val;
+  workspace.clear();
   redrawUi();
 }
