@@ -51,11 +51,12 @@ function redrawUi() {
     $("#inputBox").text("");
   }
 }
-
+workspace.addChangeListener(Blockly.Events.disableOrphans);
 function runcode() {
   var geval = eval;
   try {
     geval(Blockly.JavaScript.workspaceToCode(workspace));
+
   } catch (e) {
     console.error(e);
   }
